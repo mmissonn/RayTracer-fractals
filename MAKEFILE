@@ -1,0 +1,14 @@
+G++FLAGS = -g 
+LINKFLAGS = -g
+
+.SUFFIXES: .cc .o
+
+ALL     =  rayx.o vector.o Calc.o Plan.o Sphere.o Triangle.o  World.o shade.o image2file.o Noise.o ri.o Quad.o patchx.o fractal.o
+
+.cc.o:	
+	g++ $(G++FLAGS) -c  $<
+
+rayt:	$(ALL)
+	g++ -o $@  $(LINKFLAGS) $(ALL) -lm
+	@echo "	------- Fini -------"
+
