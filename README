@@ -1,0 +1,5 @@
+Ray Tracer based on Pixar Renderman book
+Usage: rayt image_filename [pixels_x pixels_y]";
+image_filename = output filename
+pixelx_x and pixels_y: Size X x Y (default 100x100)
+
